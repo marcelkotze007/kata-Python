@@ -1,2 +1,6 @@
 def Calculator(data):
-    return 0
+    
+    if data == "":
+        return 0
+    
+    return int(data)
