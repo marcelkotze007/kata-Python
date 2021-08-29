@@ -15,5 +15,8 @@ class AddTests(unittest.TestCase):
     def test_Unkown(self):
         self.assertEqual(10, Calc("1,2,3,4"))
 
+    def test_Newline_delim(self):
+        self.assertEqual(10, Calc("3\n6,1"))
+
 if __name__ == '__main__':
     unittest.main()
